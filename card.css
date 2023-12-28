@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-image: url("Hearts_1.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+#characterSwitcher {
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.character {
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: rgba(255, 192, 203, 0.396);
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out, width 0.5s ease-in-out,
+    height 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.selected {
+  border: 0px solid;
+  border-radius: 10px;
+  background-color: rgba(255, 192, 203, 0.672);
+  transform: scale(1.45);
+  z-index: 100;
+}
+
+.unselected {
+  filter: blur(10px);
+}
+.character {
+  margin: 10px;
+  padding: 20px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  text-align: justify;
+  border: 2px solid pink;
+  font-size: large;
+}
+
+.character a {
+  display: block;
+  color: black;
+  text-align: justify;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.character:hover,
+.character a:hover {
+  color: hotpink;
+  border: 2px dashed pink;
+  transition: transform 0.3s ease-in-out;
+}
+
+#A:hover span:nth-child(1)::after {
+  text-align: inherit;
+  font-size: small;
+  text-decoration: underline pink;
+  content: " You are the most important person to me so please don't push yourself too much my love. Your boy can't bear to see you suffering all by yourself. I am here for you baby always whenever you need me. I cherish our relation more than my life and I want nothing but our happiness together....I love you baby. Thank you for coming into my life, Let's have more years together till the end of time <333333";
+}
+
+#B:hover span:nth-child(1)::after {
+  text-align: inherit;
+  font-size: small;
+  text-decoration: underline pink;
+  content: ' The first day we met you turned-about the place you were standing and then sat asif you were given the biggest ordeal in your life and how you said "fuck" when your eraser fell down and teacher heard it, giving you a look. You looked on the desk trying to hide your embarashment and I patted your shoulder and said \'It\'s Okay Hota h.\' while trying to comfort you...';
+}
+
+#C:hover span:nth-child(1)::after {
+  text-align: inherit;
+  font-size: small;
+  text-decoration: underline pink;
+  content: " It was not something we planned for nor was their any verbal agreement but something we did without even realising. You were warm and sort and the way we started to intertwine our finger awkwardly before we interlocked is something I will never forget. It was so cute I wish we could recreate something like that again...";
+}
+
+#D:hover span:nth-child(1)::after {
+  text-align: inherit;
+  font-size: small;
+  text-decoration: underline pink;
+  content: " At first I was scared you won't come and as I was waiting I saw your silhoutte in the drizzle my heart started to beat faster and all I could feel was relief and happiness to see you there. We held hands explored the mall and we talked about things and when you were standing next to me I pulled you closer in a hug... IDK why I did this but I loved it for sure <3...";
+}
+
+#E:hover span:nth-child(1)::after {
+  text-align: inherit;
+  font-size: small;
+  text-decoration: underline pink;
+  content: " My heart was beating at the thought of you in my arms, while I was pacing back-n-forth from the hotel to bistro to see you, I again saw you familiar outline and a smile came on my face. As we drew closer you paced up and gave me a tight hug and I knew this is what I wanted...";
+}

@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+body{
+
+    background: rgb(68, 57, 57);
+}
+
+h2,h1{
+    font-size: 6em;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+h3{
+    color: #222;
+}
+
+h2 span{
+    transition: 5s ease;
+}
+
+#Love,#Happiness:hover span:nth-child(1){
+    margin-right: 10px;
+}
+
+#Love:hover span:nth-child(1)::before{
+    content: "My ";
+}
+#Love:hover span:nth-child(2)::after{
+    content: " is only for you Baby";
+}
+
+#Sadness:hover span:nth-child(1)::before{
+    content: "Your ";
+}
+#Sadness:hover span:nth-child(2)::after{
+    content: " is 'OUR' sadness";
+}
+#Happiness:hover span:nth-child(1)::before{
+    content: "My ";
+}
+#Happiness:hover span:nth-child(2)::after{
+    content: " is only with you Baby";
+}
+
+#Love:hover span{
+    color: hotpink;
+    text-shadow: 0 0 10px hotpink, 0 0 20px rgba(255, 105, 180, 0.769), 0 0 40px rgba(255, 105, 180, 0.756), 0 0 80px rgba(255, 105, 180, 0.769);
+}
+
+#Happiness:hover span{
+    color: red;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.732), 0 0 20px rgba(255, 0, 0, 0.732), 0 0 40px rgba(255, 0, 0, 0.837);
+}
+
+#Sadness:hover span{
+    color: white;
+    text-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 40px whitesmoke;
+}
+
+#Hii, #P, #G{
+    color: white;
+    text-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke;
+}
+
+#love_{
+    font-size: 3em;
+    color: #222;
+}
+#love_:hover{
+    font-size: 3em;
+    color: whitesmoke;
+    text-shadow: 0 0 10px whitesmoke, 0 0 20px rgb(59, 102, 244);
+}
